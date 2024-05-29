@@ -14,13 +14,17 @@ fin = int(input('Introduce el año final: '))
 
 # Definimos un diccionario vacío para guardar las ventas de cada año
 ventas = {}
+print(f"EL diccionario es: \n{ventas}")
+'''
+Diccionario = {"Clave": "Dato", }
+'''
 
 # Bucle iterativo para preguntar las ventas de cada año y guardarlas en el diccionario
 # i toma como valores los años desde el año de inicio hasta el año final
 for i in range(inicio, fin+1):
     # Preguntamos por las ventas del año i y las guardamos en el diccionario con la clave el año y el valor las ventas
     ventas[i] = float(input('Introduce las ventas del año ' + str(i) +': '))
-
+    print(f"EL diccionario es: \n{ventas}")
 
 # Definimos la figura y los ejes del gráfico con Matplotlib
 fig, ax = plt.subplots()
